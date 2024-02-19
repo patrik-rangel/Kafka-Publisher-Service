@@ -1,26 +1,26 @@
 package domain
 
 type PurchaseDomain struct {
-	Id			    int64
-	ClientName	    string
-	DatePurchase    string
-	ShippingAddress Address
-	Products        []Product
-    TotalAmount     float64
-    PaymentMethod   string
+	Id			    int64	   `copier:"Id"`
+	ClientName	    string     `copier:"ClientName"`
+	DatePurchase    string     `copier:"DatePurchase"`
+	ShippingAddress Address    `copier:"ShippingAddress"`
+	Products        []Product  `copier:"Products"`
+    TotalAmount     float64    `copier:"TotalAmount"`
+    PaymentMethod   string     `copier:"PaymentMethod"`
 }
 
 type Address struct {
-    Street  string
-    City    string
-    State   string
-    ZipCode string
-    Country string
+    Street  string	`copier:"Street"`
+    City    string	`copier:"City"`
+    State   string	`copier:"State"`
+    ZipCode string	`copier:"ZipCode"`
+    Country string	`copier:"Country"`
 }
 
 type Product struct {
-    ID       int64
-    Name     string
-    Quantity int
-    Price    float64
+    Id       int64	  `copier:"Id"`
+    Name     string	  `copier:"Name"`
+    Quantity int	  `copier:"Quantity"`
+    Price    float64  `copier:"Price"`
 }
