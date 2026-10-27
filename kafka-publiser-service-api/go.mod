@@ -1,6 +1,6 @@
 module github.com/patrik-rangel/Kafka-Publisher-Service/blob/main/kafka-publiser-service-api
 
-go 1.21.5
+go 1.24
 
 require (
 	github.com/HunCoding/golang-architecture/hexagonal-news-api v0.0.0-20230923144404-d21f2d2879fb
@@ -20,7 +20,7 @@ require (
 	github.com/go-playground/validator/v10 v10.14.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/klauspost/compress v1.15.9 // indirect
+	github.com/klauspost/compress v1.18.7 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
 	github.com/leodido/go-urn v1.2.4 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
